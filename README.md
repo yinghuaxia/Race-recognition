@@ -13,4 +13,10 @@ This is an easy tool that helps labeling more easily. Images and their ground tr
 Functions in this file help check whether the created ground truth json files are valid or not. Details of functions are annotated above every function in this file. 
 
 ### random_paste_images.ipynb
-This file pastes images (from 1 to 4) to a background image, the resized shape of the pasted image has considered the proportion of anchors and the bounding box of the image. It can also add augmentations to every pasted image, the pasted image is assumed of square shape to prevent over-deformation.
+This file pastes images (from 1 to 4) to a background image, and created corresponding new ground truth of the new image. The resized shape of the pasted image has considered the proportion of anchors and the bounding box of the image. It can also add augmentations to every pasted image, the pasted image is assumed of square shape to prevent over-deformation.
+
+![One person pasted](https://github.com/user-attachments/assets/c9eb7a65-306a-4582-a434-9d8551189124)
+![Two people pasted](https://github.com/user-attachments/assets/618fd258-58e4-42d7-9bda-ca86369ef256)
+
+![Three people pasted](https://github.com/user-attachments/assets/3641b43f-0ca2-4471-b198-2d696be6b6e0)
+![Four people pasted](https://github.com/user-attachments/assets/f2ff934a-68c8-454e-90d5-0208fec699b3)
