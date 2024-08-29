@@ -20,3 +20,6 @@ This file pastes images (from 1 to 4) to a background image, and created corresp
 
 ![Three people pasted](https://github.com/user-attachments/assets/3641b43f-0ca2-4471-b198-2d696be6b6e0)
 ![Four people pasted](https://github.com/user-attachments/assets/f2ff934a-68c8-454e-90d5-0208fec699b3)
+
+### deepface_label.py
+For creating pseudo labels, we can first use [Deepface](https://github.com/serengil/deepface) to help us label races. By simply using the pip command ```pip install deepface```, we can directly use the functions in the project. This file uses Deepface with yolov8 backbone to do this job and further saves the labels in the format corresponding to CSL-YOLO.
