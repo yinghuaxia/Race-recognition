@@ -26,4 +26,7 @@ This file pastes images (from 1 to 4) to a background image, and created corresp
 ![Four people pasted](https://github.com/user-attachments/assets/f2ff934a-68c8-454e-90d5-0208fec699b3)
 
 ### deepface_label.py
-For creating pseudo labels, we can first use [Deepface](https://github.com/serengil/deepface) to help us label races. By simply using the pip command ```pip install deepface```, we can directly use the functions in the project. This file uses Deepface with yolov8 backbone to do this job and further saves the labels in the format corresponding to CSL-YOLO.
+For creating pseudo labels, we can first use [Deepface](https://github.com/serengil/deepface) to help us label races. By simply using the pip command `pip install deepface`, we can directly use the functions in the project. This file uses Deepface with yolov8 backbone to do this job and further saves the labels in the format corresponding to CSL-YOLO.
+
+### plot_LAB.ipynb
+This file use simple `cv2.CascadeClassifier` to detect faces in images of a folder. The bounded region will generate a pair of values indicating corresponding LAB values, users can further decide in which LAB range will the images be kept. This file also use `matplotlib` to visualize the results of the calculated results.
