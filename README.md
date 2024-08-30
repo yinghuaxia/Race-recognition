@@ -30,3 +30,6 @@ For creating pseudo labels, we can first use [Deepface](https://github.com/seren
 
 ### plot_LAB.ipynb
 This file use simple `cv2.CascadeClassifier` to detect faces in images of a folder. The bounded region will generate a pair of values indicating corresponding LAB values, users can further decide in which LAB range will the images be kept. This file also use `matplotlib` to visualize the results of the calculated results.
+
+### tflite conversion
+The file contains the necessary code to transform the CSL-YOLO model into tflite format. Users only need to specify the path to store the new weight and model while annotating where the original path was stored.
